@@ -42,6 +42,7 @@ namespace BigSortingAlgorithm.Internal
             _reader?.Dispose();
             _pauseReadingEvent?.Dispose();
             _cts.Cancel();
+            _cts.Dispose();
         }
 
         public bool MoveToNextRun()
